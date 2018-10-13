@@ -420,11 +420,11 @@ header.masthead .intro-text .intro-heading {
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        background: url("../img/prof.jpg") no-repeat;
+        background: url("../img/prof.JPG") no-repeat;
         display: inline-block;
 }
 .bitmoji:hover{
-  background: url("../img/prof2.JPG") no-repeat;
+  background: url("../img/prof2.jpg") no-repeat;
   background-size: cover;
 }
 
