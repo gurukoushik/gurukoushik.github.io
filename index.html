@@ -233,7 +233,7 @@
       <table style="width:100%">
       <tr>
         <td><b>Artificial Intelligence</b></td>
-        <td>Reinforcement Learning, Machine Learning & its Applications</td>
+        <td>Reinforcement Learning, Machine Learning</td>
       </tr>
       <tr>
         <td><b>Automotive</b></td>
@@ -282,6 +282,7 @@
           </div>
         </div>
         <div class="row">
+          
           <div class="col-md-3 col-sm-4 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-hover">
@@ -294,6 +295,20 @@
             <div class="portfolio-caption">
               <h5>Emergency Stairs</h5>
               <p class="text-muted">Product Design</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/projects/thumbnail_8.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h5>Hybrid A*</h5>
+              <p class="text-muted">Automotive</p>
             </div>
           </div>
           <div class="col-md-3 col-sm-4 portfolio-item">
@@ -478,6 +493,72 @@
                     <li>‘Design of a static balancing mechanism for coordinated motion of an external load’ – Aravind Baskar, G Saravana Kumar, Sandipan Bandyopadhyay, 2nd International and 17th National Conference on Machines and Mechanisms</li>
                     <li>https://innovate.mygov.in/challenges/innovation-challenge-for-easy-accessibility-to-trains-from-low-level-platforms/</li>
                     <li>Bearing Housing drawings provided by Dr. Sandipan Bandyopadhyay, Department of Engineering Design, IIT Madras</li>
+                  </ol> 
+
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 8 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Autonomous Vehicle Path Planning - Hybrid A* and Reeds Shepp Paths</h2>
+                  <p class="item-intro text-muted">Duration : 2.5 months | Guide : Prof. Shankar Ram | Team : Individual</p>
+                  
+
+                  <h4 class="text-left">Introduction</h4>
+                  <p class="text-left">Autonomous vehicles and mobile robots broadly pose the problem of sensing, mapping, planning and tracking. In this project, the path planning sub domain is tackled. Given that the sensing and mapping techniques are in place and the system has the knowledge about the map of the surroundings, path planning answers the question of how to move to a desired location taking into consideration, the capabilities of the system. For the case of a car or a mobile robot with a non-holonomic constraint, the optimal path from a starting orientation to a goal orientation is found using the Hybrid A* grid search algorithm using the Reeds Shepp curve heuristic.</p>
+
+                  <h4 class="text-left">Methodology</h4>
+                  <p class="text-left">Conventional polynomial fitting methods work for generating curves where the vehicle plans a path only to move in the forward direction. To generate paths which allows to move in the reverse direction included, poses a challenge for polynomial fitting as it includes cusps. The path planning algorithm includes two divisions which are 1) planning a path from a given starting orientation to a goal orientation optimally and 2) planning a path that has obstacle avoidance capabilities.</p>
+
+
+                  <h5 class="text-left">Reeds Shepp Paths</h5>
+                  <p class="text-left">Dubin curves are the most widely used path planning heuristics which allows only for forward motion and the path can be of 6 types namely LRL, RLR, LSL, RSR, LSR and RSL. L denotes moving left in a circle of radius of curvature ‘rad’ where ‘rad’ is the minimum radius of curvature possible for the given vehicle. R denotes moving right in a circle of radius of curvature ‘rad’. S denotes moving straight.</p>
+
+                  <img class="img-fluid d-block mx-auto" src="img/projects/8_1.jpg" alt="">
+
+                  <p class="text-left">Whereas, Reeds Sheep path heuristics provides optimal path including reverse motion of the vehicle. There are 46 types of paths possible between any two orientations and one of them is the optimal path for the given orientations. The path types are:</p>
+
+                  <img class="img-fluid d-block mx-auto" src="img/projects/8_2.jpg" alt="">
+
+                  <p class="text-left">Another capability that was added to this path planning algorithm is to choose the minimum ratio of forward motion distance to reverse motion distance allowed to plan a path that takes into account how humans drive i.e with more forward and less reverse. The priority given to finding a path with the most optimal distance vs finding a path with less reverse motion can also be hand tuned according the application.</p>
+
+                  <img class="img-fluid d-block mx-auto" src="img/projects/8_3.jpg" alt="">
+
+
+                  <h5 class="text-left">Hybrid A*</h5>
+
+                  <img class="img-fluid d-block mx-auto" src="img/projects/8_4.jpg" alt="">
+
+                  <p class="text-left">Hybrid A* is a grid search algorithm where the map is discretised into a finite number of cells and a score map is generated which is of the same size of the grid. The score map gives high values for obstacles and the goal has a zero value. The other grid cells have a value that corresponds to the distance from the goal position. The path planner starts from the initial orientations and makes five moves namely going straight, turning left along an arc of radius r1, turning left along an arc of radius r2, turning right along an arc of radius r1 and turning right along an arc of radius r2. Whichever move lands on a cell with the least cost, the current position is updated and the move which led to that cell is stored. This process continues until the goal position is reached. And after every few moves, a check is made whether a Reeds Shepp path from the current location to the goal location passes through any obstacle. If it does, then the path planner continues going along the grid. If not, then the path has been found and the planning terminates. </p>
+
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/bwZYGR9lQ2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+                  <h4 class="text-left">References</h4>
+                  <ol class = "text-left" type="1">
+                    <li>Steven LaValle - 'Planning Algorithms', 2006, Cambridge University Press</li>
+                    <li>Practical Search Techniques in Path Planning for Autonomous Driving - Dmitri Dolgov, Sebastian Thrun et al.</li>
+                    
                   </ol> 
 
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
