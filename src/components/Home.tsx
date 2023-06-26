@@ -83,7 +83,7 @@ export default function Home() {
 
           <Stack direction="row" spacing={3} alignItems="center">
             {social.map((elem, index) => (
-              <Link target="_blank" href={elem.link}>
+              <Link key={elem.link} target="_blank" href={elem.link}>
                 <elem.icon fontSize="large" sx={{ color: "black" }} />
               </Link>
             ))}
@@ -95,7 +95,7 @@ export default function Home() {
 
           <Stack direction="row" spacing={3} alignItems="center">
             {pages.map((elem, index) => (
-              <Link href={elem.link}>
+              <Link key={elem.title} href={elem.link}>
                 <Typography
                   variant="h4"
                   sx={{
