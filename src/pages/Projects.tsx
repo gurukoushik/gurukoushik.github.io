@@ -4,9 +4,9 @@ import { Box } from "@mui/system";
 import { Stack } from "@mui/system";
 import Header from "@/components/Header";
 
-export default function AboutPage() {
+export default function ProjectsPage() {
   React.useEffect(() => {
-    document.title = "About - Guru Senthil";
+    document.title = "Projects - Guru Senthil";
   }, []);
 
   return (
@@ -26,7 +26,7 @@ export default function AboutPage() {
             variant="h4"
             sx={{ fontFamily: "Monospace", fontWeight: "bold" }}
           >
-            About
+            Projects
           </Typography>
           <Typography
             variant="body1"

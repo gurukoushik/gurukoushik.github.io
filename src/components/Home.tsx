@@ -18,15 +18,15 @@ export default function Home() {
     },
     {
       title: "Projects",
-      link: "/",
+      link: "/Projects",
     },
     {
       title: "Blog",
-      link: "/",
+      link: "/Blog",
     },
     {
       title: "Resume",
-      link: "/",
+      link: "/Resume",
     },
   ];
   const social = [
