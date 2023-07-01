@@ -14,8 +14,6 @@ export default function ProjectsPage() {
       <Header />
 
       <Box
-        m={3}
-        p={5}
         display="flex"
         alignItems="left"
         justifyContent="left"

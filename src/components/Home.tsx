@@ -2,7 +2,7 @@ import * as React from "react";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { Stack } from "@mui/system";
-import { Divider } from "@mui/material";
+import { Divider, Grid } from "@mui/material";
 import { Link } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -61,21 +61,21 @@ export default function Home() {
       >
         <Stack direction="column" spacing={1} alignItems="center">
           <Typography
-            variant="h1"
+            variant="h2"
             sx={{ fontFamily: "default", fontWeight: "bold" }}
           >
             {"< /🤖 >"}
           </Typography>
 
           <Typography
-            variant="h2"
+            variant="h3"
             sx={{ fontFamily: "Monospace", fontWeight: "bold" }}
           >
             Guru Senthil
           </Typography>
 
           <Typography
-            variant="h4"
+            variant="h5"
             sx={{ fontFamily: "Monospace", fontWeight: "bold", color: "gray" }}
           >
             Software Developer | Roboticist

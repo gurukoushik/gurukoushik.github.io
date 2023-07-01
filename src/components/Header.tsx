@@ -5,10 +5,9 @@ import { Link } from "@mui/material";
 
 export default function Header() {
   return (
-    <>
+    <div>
       <Link href="/" underline="none">
         <Box
-          display="flex"
           alignItems="center"
           justifyContent="center"
           sx={{ textAlign: "center", fontFamily: "Monospace" }}
@@ -21,6 +20,6 @@ export default function Header() {
           </Typography>
         </Box>
       </Link>
-    </>
+    </div>
   );
 }

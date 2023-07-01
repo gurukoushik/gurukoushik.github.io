@@ -5,11 +5,19 @@ import Toolbar from "@mui/material/Toolbar";
 
 export default function Layout(props: any) {
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box
+      component="main"
+      sx={{
+        flexGrow: 1,
+        p: 3,
+        width: "65%",
+        height: "100vh",
+        margin: "0 auto",
+        backgroundColor: "red",
+      }}
+    >
       <CssBaseline />
-      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-        {props.children}
-      </Box>
+      {props.children}
     </Box>
   );
 }
