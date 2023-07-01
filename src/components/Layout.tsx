@@ -13,7 +13,7 @@ export default function Layout(props: any) {
         width: "65%",
         height: "100vh",
         margin: "0 auto",
-        backgroundColor: "red",
+        // backgroundColor: "red",
       }}
     >
       <CssBaseline />
