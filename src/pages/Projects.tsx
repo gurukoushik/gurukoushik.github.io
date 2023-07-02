@@ -13,21 +13,25 @@ export default function ProjectsPage() {
 
   const projects = [
     {
+      id: 1,
       title: "Project Title 1",
       desc: "Project Description 1",
       imagePath: "/projects/images/robot.jpg",
     },
     {
+      id: 2,
       title: "Project Title 2",
       desc: "Project Description 2",
       imagePath: "/projects/images/robot.jpg",
     },
     {
+      id: 3,
       title: "Project Title 3",
       desc: "Project Description 3",
       imagePath: "/projects/images/robot.jpg",
     },
     {
+      id: 4,
       title: "Project Title 4",
       desc: "Project Description 4",
       imagePath: "/projects/images/robot.jpg",
@@ -60,6 +64,7 @@ export default function ProjectsPage() {
                   title={elem.title}
                   desc={elem.desc}
                   imagePath={elem.imagePath}
+                  readMorePath={"/project/" + elem.id}
                 />
               </Grid>
             ))}

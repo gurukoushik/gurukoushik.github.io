@@ -1,6 +1,6 @@
 import * as React from "react";
-import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -48,6 +48,7 @@ export default function MediaCard(propes: MediaCardProps) {
         </CardContent>
         <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
           {propes.readMorePath && (
+            <Link href={propes.readMorePath}>
             <IconButton aria-label="paper">
               <Typography
                 component="div"
@@ -57,6 +58,7 @@ export default function MediaCard(propes: MediaCardProps) {
                 Read More
               </Typography>
             </IconButton>
+            </Link>
           )}
           {propes.githubPath && (
             <IconButton aria-label="github">
