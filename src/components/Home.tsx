@@ -2,7 +2,7 @@ import * as React from "react";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { Stack } from "@mui/system";
-import { Divider, Grid } from "@mui/material";
+import { Divider } from "@mui/material";
 import { Link } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
