@@ -9,6 +9,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import SchoolIcon from "@mui/icons-material/School";
 import { Instagram } from "@mui/icons-material";
+import { useMediaQuery, useTheme } from '@mui/material';
 
 export default function Home() {
   const pages = [
@@ -51,6 +52,11 @@ export default function Home() {
       link: "https://www.instagram.com/guru_koushik/?hl=en",
     },
   ];
+
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const containerDirection = isMobile ? 'column' : 'row';
+
   return (
     <>
       <Box
@@ -93,7 +99,7 @@ export default function Home() {
           <Divider sx={{ width: "100%", color: "black" }} />
           <Box sx={{ mx: "auto", height: 20 }} />
 
-          <Stack direction="row" spacing={3} alignItems="center">
+          <Stack direction={containerDirection} spacing={3} alignItems="center">
             {pages.map((elem, index) => (
               <Link key={elem.title} href={elem.link}>
                 <Typography

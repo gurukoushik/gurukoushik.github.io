@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "npx prettier --write .",
+    "lint": "next lint && npx prettier --write . '!**/*.{js,jsx,ts,tsx}'",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

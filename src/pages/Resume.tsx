@@ -17,6 +17,7 @@ export default function ResumePage() {
         display="flex"
         alignItems="left"
         justifyContent="left"
+        marginTop={5}
         sx={{ textAlign: "left", fontFamily: "Monospace" }}
       >
         <Stack direction="column" spacing={1} alignItems="left">

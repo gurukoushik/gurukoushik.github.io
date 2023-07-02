@@ -1,13 +1,38 @@
 import * as React from "react";
 import { Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import { Stack } from "@mui/system";
 import Header from "@/components/Header";
+import MediaCard from "@/components/MediaCard";
 
 export default function ProjectsPage() {
   React.useEffect(() => {
     document.title = "Projects - Guru Senthil";
   }, []);
+
+  const projects = [
+    {
+      title: "Project Title",
+      desc: "Project Description",
+      imagePath: "robot.jpg",
+    },
+    {
+      title: "Project Title 2",
+      desc: "Project Description 2",
+      imagePath: "robot.jpg",
+    },
+    {
+        title: "Project Title 2",
+        desc: "Project Description 2",
+        imagePath: "robot.jpg",
+      },
+      {
+        title: "Project Title 2",
+        desc: "Project Description 2",
+        imagePath: "robot.jpg",
+      },
+  ];
 
   return (
     <>
@@ -17,6 +42,7 @@ export default function ProjectsPage() {
         display="flex"
         alignItems="left"
         justifyContent="left"
+        marginTop={5}
         sx={{ textAlign: "left", fontFamily: "Monospace" }}
       >
         <Stack direction="column" spacing={1} alignItems="left">
@@ -26,12 +52,18 @@ export default function ProjectsPage() {
           >
             Projects
           </Typography>
-          <Typography
-            variant="body1"
-            sx={{ fontFamily: "Monospace", fontWeight: "bold" }}
-          >
-            TODO
-          </Typography>
+
+          <Grid container>
+            {projects.map((elem, index) => (
+              <Grid key={index} item xs={12} md={6} sx={{pr: 2, pb: 2}}>
+                <MediaCard
+                  title={elem.title}
+                  desc={elem.desc}
+                  imagePath={elem.imagePath}
+                />
+              </Grid>
+            ))}
+          </Grid>
         </Stack>
       </Box>
     </>
