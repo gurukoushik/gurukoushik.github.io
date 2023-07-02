@@ -22,8 +22,8 @@ export default function Home() {
       link: "/Projects",
     },
     {
-      title: "Blog",
-      link: "/Blog",
+      title: "Blogs",
+      link: "/Blogs",
     },
     {
       title: "Resume",
