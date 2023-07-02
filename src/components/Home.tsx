@@ -67,21 +67,21 @@ export default function Home() {
       >
         <Stack direction="column" spacing={1} alignItems="center">
           <Typography
-            variant="h2"
+            variant="h3"
             sx={{ fontFamily: "default", fontWeight: "bold" }}
           >
             {"< /🤖 >"}
           </Typography>
 
           <Typography
-            variant="h3"
+            variant="h4"
             sx={{ fontFamily: "Monospace", fontWeight: "bold" }}
           >
             Guru Senthil
           </Typography>
 
           <Typography
-            variant="h5"
+            variant="h6"
             sx={{ fontFamily: "Monospace", fontWeight: "bold", color: "gray" }}
           >
             Software Developer | Roboticist
@@ -103,7 +103,7 @@ export default function Home() {
             {pages.map((elem, index) => (
               <Link key={elem.title} href={elem.link}>
                 <Typography
-                  variant="h4"
+                  variant="h5"
                   sx={{
                     fontFamily: "Monospace",
                     fontWeight: "bold",

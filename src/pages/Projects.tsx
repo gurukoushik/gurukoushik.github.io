@@ -15,22 +15,22 @@ export default function ProjectsPage() {
     {
       title: "Project Title 1",
       desc: "Project Description 1",
-      imagePath: "robot.jpg",
+      imagePath: "/projects/images/robot.jpg",
     },
     {
       title: "Project Title 2",
       desc: "Project Description 2",
-      imagePath: "robot.jpg",
+      imagePath: "/projects/images/robot.jpg",
     },
     {
       title: "Project Title 3",
       desc: "Project Description 3",
-      imagePath: "robot.jpg",
+      imagePath: "/projects/images/robot.jpg",
     },
     {
       title: "Project Title 4",
       desc: "Project Description 4",
-      imagePath: "robot.jpg",
+      imagePath: "/projects/images/robot.jpg",
     },
   ];
 

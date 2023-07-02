@@ -13,11 +13,13 @@ export default function BlogsPage() {
 
   const blogs = [
     {
+      id: 1,
       title: "My First Blog",
       date: "2023/07/02",
       mdFile: "blogs/blog1.md",
     },
     {
+      id: 2,
       title: "My Second Blog",
       date: "2023/07/03",
       mdFile: "blogs/blog2.md",
@@ -43,7 +45,7 @@ export default function BlogsPage() {
             Blogs
           </Typography>
           {blogs.map((blog, index) => (
-            <Link key={index} href="https://google.com">
+            <Link key={index} href={'/blog/' + blog.id}>
               <Typography
                 variant="h6"
                 sx={{ fontFamily: "Monospace", fontWeight: "bold" }}
