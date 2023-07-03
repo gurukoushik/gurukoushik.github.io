@@ -70,7 +70,7 @@ export default function Home() {
             variant="h3"
             sx={{ fontFamily: "default", fontWeight: "bold" }}
           >
-            {"< /🤖 >"}
+            {"└[∵]┘"}
           </Typography>
 
           <Typography

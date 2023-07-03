@@ -16,7 +16,7 @@ export default function Header() {
             variant="h5"
             sx={{ fontFamily: "Monospace", fontWeight: "bold", color: "black" }}
           >
-            {"< /🤖 > Guru Senthil"}
+            {"└[∵]┘ Guru Senthil"}
           </Typography>
         </Box>
       </Link>
