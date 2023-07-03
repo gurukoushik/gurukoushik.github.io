@@ -7,7 +7,7 @@ export default function Layout(props: any) {
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const boxWidth = isMobile ? '100vw' : '50vw';
+  const boxWidth = isMobile ? "100vw" : "70vw";
 
   return (
     <Box
@@ -15,7 +15,7 @@ export default function Layout(props: any) {
       sx={{
         flexGrow: 1,
         p: 3,
-        width: {boxWidth},
+        width: boxWidth,
         height: "100vh",
         margin: "0 auto",
         // backgroundColor: "red",
