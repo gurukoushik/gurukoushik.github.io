@@ -25,10 +25,6 @@ export default function Home() {
       title: "Blogs",
       link: "/Blogs",
     },
-    {
-      title: "Resume",
-      link: "/Resume",
-    },
   ];
   const social = [
     {
