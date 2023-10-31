@@ -71,7 +71,7 @@ export default function Home() {
     const intervalId = setInterval(toggleRobot, 2000);
     // Clear the interval when the component unmounts
     return () => clearInterval(intervalId);
-  }, [robot]);
+  }, [toggleRobot]);
 
   return (
     <>
