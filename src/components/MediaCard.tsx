@@ -8,6 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import SchoolIcon from "@mui/icons-material/School";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import DescriptionIcon from '@mui/icons-material/Description';
 
 type MediaCardProps = {
   title: string;
@@ -50,19 +51,15 @@ export default function MediaCard(propes: MediaCardProps) {
           {propes.readMorePath && (
             <Link href={propes.readMorePath}>
             <IconButton aria-label="paper">
-              <Typography
-                component="div"
-                variant="h6"
-                sx={{ fontFamily: "Monospace" }}
-              >
-                Read More
-              </Typography>
+              <DescriptionIcon />
             </IconButton>
             </Link>
           )}
           {propes.githubPath && (
             <IconButton aria-label="github">
-              <GitHubIcon />
+              <Link target="_blank" href={propes.githubPath}>
+                <GitHubIcon />
+              </Link>
             </IconButton>
           )}
           {propes.gscholarPath && (

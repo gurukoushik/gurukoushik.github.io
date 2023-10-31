@@ -6,12 +6,20 @@ import { Stack } from "@mui/system";
 import Header from "@/components/Header";
 import MediaCard from "@/components/MediaCard";
 
+interface ProjectProps {
+  id: number;
+  title: string;
+  desc: string;
+  imagePath: string;
+  githubPath?: string;
+}
+
 export default function ProjectsPage() {
   React.useEffect(() => {
     document.title = "Projects - Guru Senthil";
   }, []);
 
-  const projects = [
+  const projects: ProjectProps[] = [
     {
       id: 1,
       title: "Project Title 1",
@@ -65,6 +73,7 @@ export default function ProjectsPage() {
                   desc={elem.desc}
                   imagePath={elem.imagePath}
                   readMorePath={"/project/" + elem.id}
+                  githubPath={elem.githubPath}
                 />
               </Grid>
             ))}
