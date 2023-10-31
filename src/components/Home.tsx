@@ -68,7 +68,7 @@ export default function Home() {
 
   React.useEffect(() => {
     // Set up an interval to toggle strings every second
-    const intervalId = setInterval(toggleRobot, 2000);
+    const intervalId = setInterval(toggleRobot, 1000);
     // Clear the interval when the component unmounts
     return () => clearInterval(intervalId);
   }, [toggleRobot]);
