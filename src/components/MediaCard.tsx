@@ -49,11 +49,11 @@ export default function MediaCard(propes: MediaCardProps) {
         </CardContent>
         <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
           {propes.readMorePath && (
-            <Link href={propes.readMorePath}>
             <IconButton aria-label="paper">
+              <Link href={propes.readMorePath}>
               <DescriptionIcon />
-            </IconButton>
             </Link>
+            </IconButton>
           )}
           {propes.githubPath && (
             <IconButton aria-label="github">

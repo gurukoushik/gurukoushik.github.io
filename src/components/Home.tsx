@@ -53,6 +53,26 @@ export default function Home() {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const containerDirection = isMobile ? 'column' : 'row';
 
+  const [robot, setRobot] = React.useState('└[∵]┘');
+  const [alternate, setAlternate] = React.useState(true);
+
+  // Function to toggle between two strings
+  const toggleRobot = () => {
+    if (alternate) {
+      setRobot('└[∵]┘');
+    } else {
+      setRobot('─[∵]─');
+    }
+    setAlternate(!alternate);
+  };
+
+  React.useEffect(() => {
+    // Set up an interval to toggle strings every second
+    const intervalId = setInterval(toggleRobot, 2000);
+    // Clear the interval when the component unmounts
+    return () => clearInterval(intervalId);
+  }, [robot]);
+
   return (
     <>
       <Box
@@ -66,7 +86,7 @@ export default function Home() {
             variant="h3"
             sx={{ fontFamily: "default", fontWeight: "bold" }}
           >
-            {"└[∵]┘"}
+            {robot}
           </Typography>
 
           <Typography
