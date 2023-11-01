@@ -39,14 +39,14 @@ export default function Home() {
       icon: LinkedInIcon,
       link: "https://www.linkedin.com/in/gurukoushik/",
     },
-    {
-      icon: TwitterIcon,
-      link: "https://twitter.com/gurukoushik",
-    },
-    {
-      icon: Instagram,
-      link: "https://www.instagram.com/guru_koushik/?hl=en",
-    },
+    // {
+    //   icon: TwitterIcon,
+    //   link: "https://twitter.com/gurukoushik",
+    // },
+    // {
+    //   icon: Instagram,
+    //   link: "https://www.instagram.com/guru_koushik/?hl=en",
+    // },
   ];
 
   const theme = useTheme();
