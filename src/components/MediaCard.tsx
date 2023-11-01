@@ -21,10 +21,10 @@ type MediaCardProps = {
 
 export default function MediaCard(propes: MediaCardProps) {
   return (
-    <Card sx={{ display: "flex", border: 1, fontFamily: "Monospace" }}>
+    <Card sx={{ display: "flex", border: 1, fontFamily: "Monospace"}}>
       <CardMedia
         component="img"
-        sx={{ width: 150 }}
+        sx={{ width: 200 }}
         src={propes.imagePath}
         alt={propes.title}
       />
@@ -34,13 +34,13 @@ export default function MediaCard(propes: MediaCardProps) {
         <CardContent sx={{ flex: "1 0 auto", fontFamily: "default" }}>
           <Typography
             component="div"
-            variant="h6"
+            variant="subtitle1"
             sx={{ fontFamily: "Monospace", fontWeight: "bold" }}
           >
             {propes.title}
           </Typography>
           <Typography
-            variant="subtitle1"
+            variant="subtitle2"
             component="div"
             sx={{ fontFamily: "Monospace" }}
           >

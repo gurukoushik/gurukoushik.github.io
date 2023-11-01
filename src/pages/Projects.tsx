@@ -22,9 +22,10 @@ export default function ProjectsPage() {
   const projects: ProjectProps[] = [
     {
       id: 1,
-      title: "Project Title 1",
-      desc: "Project Description 1",
-      imagePath: "/projects/images/robot.jpg",
+      title: "Route Planning with Charging Stops",
+      desc: "Plan a route between cities with charging stops in minimal time.",
+      imagePath: "/projects/images/route_planning_charging.jpeg",
+      githubPath: "https://github.com/gurukoushik/charging-planning"
     },
     {
       id: 2,
