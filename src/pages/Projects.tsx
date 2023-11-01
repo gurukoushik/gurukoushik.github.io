@@ -22,28 +22,17 @@ export default function ProjectsPage() {
   const projects: ProjectProps[] = [
     {
       id: 1,
-      title: "Route Planning with Charging Stops",
+      title: "Route Planning w/ Charging",
       desc: "Plan a route between cities with charging stops in minimal time.",
       imagePath: "/projects/images/route_planning_charging.jpeg",
       githubPath: "https://github.com/gurukoushik/charging-planning"
     },
     {
       id: 2,
-      title: "Project Title 2",
-      desc: "Project Description 2",
-      imagePath: "/projects/images/robot.jpg",
-    },
-    {
-      id: 3,
-      title: "Project Title 3",
-      desc: "Project Description 3",
-      imagePath: "/projects/images/robot.jpg",
-    },
-    {
-      id: 4,
-      title: "Project Title 4",
-      desc: "Project Description 4",
-      imagePath: "/projects/images/robot.jpg",
+      title: "Streak - CLI Habit Tracker",
+      desc: "A CLI tool developed in Rust to track daily habits through streaks.",
+      imagePath: "/projects/images/streak.jpeg",
+      githubPath: "https://github.com/gurukoushik/streak"
     },
   ];
 
