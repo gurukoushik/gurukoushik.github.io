@@ -1,11 +1,20 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
-import { useMediaQuery, useTheme } from '@mui/material';
+import {ThemeProvider, createTheme} from '@mui/material/styles';
+import { useMediaQuery } from '@mui/material';
 
 export default function Layout(props: any) {
 
-  const theme = useTheme();
+  const theme = createTheme({
+    palette: {
+      background: {
+        default: "#f6ffde"
+      }
+    }
+  });
+
+  // const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const boxWidth = isMobile ? "100vw" : "70vw";
 
@@ -21,8 +30,10 @@ export default function Layout(props: any) {
         // backgroundColor: "red",
       }}
     >
+      <ThemeProvider theme={theme}>
       <CssBaseline />
       {props.children}
+      </ThemeProvider>
     </Box>
   );
 }
